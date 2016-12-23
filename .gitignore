@@ -6,16 +6,3 @@ target/
 *.iml
 *.ipr
 *.iws
-
-# Exclude all Eclipse related project files
-.settings/
-.project
-.classpath
-
-# Exclude other generated items
-test-output/
-.DS_Store
-.checkstyle
-.pmd
-.pmdruleset.xml
-
