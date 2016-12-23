@@ -12,16 +12,12 @@
     <properties>
         <servlet.version>3.1.0</servlet.version>
         <gson.version>2.7</gson.version>
-        <camel-version>2.15.3</camel-version>
         <jackson.version>2.8.0</jackson.version>
         <application-path>/messages-listener</application-path>
         <server-port>8081</server-port>
         <java-version>1.8</java-version>
-        <streaming.version>1.0.27</streaming.version>
         <spring.version>4.3.1.RELEASE</spring.version>
         <testng.version>6.9.4</testng.version>
-        <common-monitoring-version>[1.5.0,1.6.0)</common-monitoring-version>
-        <libthrift-version>0.9.3</libthrift-version>
     </properties>
 
     <dependencies>
@@ -43,24 +39,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
-        </dependency>
-
-        <dependency>
-            <artifactId>streaming-kafka</artifactId>
-            <groupId>com.edmunds.streaming</groupId>
-            <version>${streaming.version}</version>
-        </dependency>
-
-        <dependency>
-            <artifactId>streaming-api</artifactId>
-            <groupId>com.edmunds.streaming</groupId>
-            <version>${streaming.version}</version>
-        </dependency>
-
-        <dependency>
-            <artifactId>camel-kinesis</artifactId>
-            <groupId>com.edmunds.streaming</groupId>
-            <version>${streaming.version}</version>
         </dependency>
 
         <dependency>
@@ -133,24 +111,6 @@
             <artifactId>mockito-all</artifactId>
             <version>1.9.5</version>
             <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.thrift</groupId>
-            <artifactId>libthrift</artifactId>
-            <version>${libthrift-version}</version>
-        </dependency>
-
-        <!-- LOGGER -->
-        <dependency>
-            <groupId>com.edmunds.common</groupId>
-            <artifactId>common-monitoring-impl</artifactId>
-            <version>${common-monitoring-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.edmunds.common</groupId>
-            <artifactId>common-monitoring-api</artifactId>
-            <version>${common-monitoring-version}</version>
         </dependency>
 
     </dependencies>
