@@ -1,8 +1,4 @@
-# Exclude all files from target directory
-target/
-
-# Exclude all idea related project files
+target
+.env
 .idea/
 *.iml
-*.ipr
-*.iws
